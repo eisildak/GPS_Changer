@@ -1,0 +1,396 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00CD741536E76D4BB8E9AEAA /* TunnelService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C99EB11112C6BF0C07E9732 /* TunnelService.swift */; };
+		1CD5D283585E8BBA00D24EF5 /* MapContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0738A447A8B7A45E5F14950 /* MapContentView.swift */; };
+		55930F4CC8CCB331111EB609 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7C3E86CDAFC4C92FF62F26 /* ContentView.swift */; };
+		6474B98DB718A4FE3333F6BE /* DeviceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84206249961E5103F92A512D /* DeviceListView.swift */; };
+		6A46DB88FCEF19589E4AA11B /* LocationControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE329C32DB5FAB179EE3B97 /* LocationControlView.swift */; };
+		A51527BBAFFBB8CE0672017B /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A2A703A76CD4AC42ADAEB1 /* SearchService.swift */; };
+		B8294397358C0837E3D7CF94 /* DeviceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CC991C102A9FA34F1A7375 /* DeviceService.swift */; };
+		E481A7CCDD751E2B4691F21C /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AC6433A443A2DEA2C185D8 /* LocationService.swift */; };
+		F66BD95D9D3A76B6A627B421 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CF03BED462FF08DEEA970D /* Device.swift */; };
+		F86CC1780103416F57C3FD70 /* GPSChangerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE2CAE47360C6440DC39552 /* GPSChangerApp.swift */; };
+		FF66F08EF28AC92FA74EE934 /* ShellRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C327796C134267D9E73ADA60 /* ShellRunner.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		056BBB38C24C3614D53E37B6 /* GPSChanger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPSChanger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D7C3E86CDAFC4C92FF62F26 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0EE329C32DB5FAB179EE3B97 /* LocationControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationControlView.swift; sourceTree = "<group>"; };
+		1C99EB11112C6BF0C07E9732 /* TunnelService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunnelService.swift; sourceTree = "<group>"; };
+		27AC6433A443A2DEA2C185D8 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		27CC991C102A9FA34F1A7375 /* DeviceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceService.swift; sourceTree = "<group>"; };
+		37CF03BED462FF08DEEA970D /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		5BE2CAE47360C6440DC39552 /* GPSChangerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSChangerApp.swift; sourceTree = "<group>"; };
+		84206249961E5103F92A512D /* DeviceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListView.swift; sourceTree = "<group>"; };
+		AB6C6B2D9D17D59D4003451B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C327796C134267D9E73ADA60 /* ShellRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellRunner.swift; sourceTree = "<group>"; };
+		D8A2A703A76CD4AC42ADAEB1 /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
+		F0738A447A8B7A45E5F14950 /* MapContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapContentView.swift; sourceTree = "<group>"; };
+		F9EAB87B7069A8363C411A7A /* GPSChanger.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GPSChanger.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		35956CF72E01A42A72D69FCB = {
+			isa = PBXGroup;
+			children = (
+				5BD5A763D1F1A41E8E819661 /* GPSChanger */,
+				6363B77E6A11905C137C0671 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		469CB172BD4B451E2A5451CE /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				77061D04DFB496C110B0ADFB /* DeviceList */,
+				FDBB05B1AC192C871C858B85 /* LocationControl */,
+				CBF0AD85969323EAF6DDFD0E /* Map */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		5BD5A763D1F1A41E8E819661 /* GPSChanger */ = {
+			isa = PBXGroup;
+			children = (
+				0D7C3E86CDAFC4C92FF62F26 /* ContentView.swift */,
+				F9EAB87B7069A8363C411A7A /* GPSChanger.entitlements */,
+				AB6C6B2D9D17D59D4003451B /* Info.plist */,
+				66EAE4EE1F41F85B4BCED806 /* App */,
+				469CB172BD4B451E2A5451CE /* Features */,
+				A458664F8A16D98597FC17B7 /* Models */,
+				96C0135B724519EB9B97F5C4 /* Services */,
+			);
+			path = GPSChanger;
+			sourceTree = "<group>";
+		};
+		6363B77E6A11905C137C0671 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				056BBB38C24C3614D53E37B6 /* GPSChanger.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66EAE4EE1F41F85B4BCED806 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5BE2CAE47360C6440DC39552 /* GPSChangerApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		77061D04DFB496C110B0ADFB /* DeviceList */ = {
+			isa = PBXGroup;
+			children = (
+				84206249961E5103F92A512D /* DeviceListView.swift */,
+			);
+			path = DeviceList;
+			sourceTree = "<group>";
+		};
+		96C0135B724519EB9B97F5C4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				27CC991C102A9FA34F1A7375 /* DeviceService.swift */,
+				27AC6433A443A2DEA2C185D8 /* LocationService.swift */,
+				D8A2A703A76CD4AC42ADAEB1 /* SearchService.swift */,
+				C327796C134267D9E73ADA60 /* ShellRunner.swift */,
+				1C99EB11112C6BF0C07E9732 /* TunnelService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A458664F8A16D98597FC17B7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				37CF03BED462FF08DEEA970D /* Device.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CBF0AD85969323EAF6DDFD0E /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				F0738A447A8B7A45E5F14950 /* MapContentView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		FDBB05B1AC192C871C858B85 /* LocationControl */ = {
+			isa = PBXGroup;
+			children = (
+				0EE329C32DB5FAB179EE3B97 /* LocationControlView.swift */,
+			);
+			path = LocationControl;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C693C6AD244D6B2B00CE674 /* GPSChanger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA511A5798525606DD1B62FD /* Build configuration list for PBXNativeTarget "GPSChanger" */;
+			buildPhases = (
+				D4D370A27C160E80E204C220 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GPSChanger;
+			packageProductDependencies = (
+			);
+			productName = GPSChanger;
+			productReference = 056BBB38C24C3614D53E37B6 /* GPSChanger.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7421F9B8E9C0DFB075BB239B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					3C693C6AD244D6B2B00CE674 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3934FDF5ED2E93A472CA372B /* Build configuration list for PBXProject "GPSChanger" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 35956CF72E01A42A72D69FCB;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 6363B77E6A11905C137C0671 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C693C6AD244D6B2B00CE674 /* GPSChanger */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D4D370A27C160E80E204C220 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55930F4CC8CCB331111EB609 /* ContentView.swift in Sources */,
+				F66BD95D9D3A76B6A627B421 /* Device.swift in Sources */,
+				6474B98DB718A4FE3333F6BE /* DeviceListView.swift in Sources */,
+				B8294397358C0837E3D7CF94 /* DeviceService.swift in Sources */,
+				F86CC1780103416F57C3FD70 /* GPSChangerApp.swift in Sources */,
+				6A46DB88FCEF19589E4AA11B /* LocationControlView.swift in Sources */,
+				E481A7CCDD751E2B4691F21C /* LocationService.swift in Sources */,
+				1CD5D283585E8BBA00D24EF5 /* MapContentView.swift in Sources */,
+				A51527BBAFFBB8CE0672017B /* SearchService.swift in Sources */,
+				FF66F08EF28AC92FA74EE934 /* ShellRunner.swift in Sources */,
+				00CD741536E76D4BB8E9AEAA /* TunnelService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6208D308B46A15A04C61B2AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GPSChanger/GPSChanger.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GPSChanger/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_NAME = GPSChanger;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7910CBE3774BDC7B34A57C59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.erol.GPSChanger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.2;
+			};
+			name = Debug;
+		};
+		98EE705C9CDF0ED839F11B26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GPSChanger/GPSChanger.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GPSChanger/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_NAME = GPSChanger;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B84624DFD87B07443DC5EF4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.erol.GPSChanger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3934FDF5ED2E93A472CA372B /* Build configuration list for PBXProject "GPSChanger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7910CBE3774BDC7B34A57C59 /* Debug */,
+				B84624DFD87B07443DC5EF4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CA511A5798525606DD1B62FD /* Build configuration list for PBXNativeTarget "GPSChanger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98EE705C9CDF0ED839F11B26 /* Debug */,
+				6208D308B46A15A04C61B2AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7421F9B8E9C0DFB075BB239B /* Project object */;
+}
