@@ -63,7 +63,7 @@ struct DeviceListView: View {
             .padding(.horizontal, 10)
             .frame(height: 32)
         }
-        .navigationTitle("GPS Changer")
+        .navigationTitle("iGPS Changer")
     }
 }
 

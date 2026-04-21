@@ -18,6 +18,9 @@
 		F66BD95D9D3A76B6A627B421 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CF03BED462FF08DEEA970D /* Device.swift */; };
 		F86CC1780103416F57C3FD70 /* GPSChangerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE2CAE47360C6440DC39552 /* GPSChangerApp.swift */; };
 		FF66F08EF28AC92FA74EE934 /* ShellRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C327796C134267D9E73ADA60 /* ShellRunner.swift */; };
+		AA1122334455667788990001 /* SavedLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1122334455667788990002 /* SavedLocation.swift */; };
+		AA1122334455667788990003 /* SavedLocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1122334455667788990004 /* SavedLocationsView.swift */; };
+		BB0011223344556677880001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB0011223344556677880002 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		D8A2A703A76CD4AC42ADAEB1 /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
 		F0738A447A8B7A45E5F14950 /* MapContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapContentView.swift; sourceTree = "<group>"; };
 		F9EAB87B7069A8363C411A7A /* GPSChanger.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GPSChanger.entitlements; sourceTree = "<group>"; };
+		AA1122334455667788990002 /* SavedLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedLocation.swift; sourceTree = "<group>"; };
+		AA1122334455667788990004 /* SavedLocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedLocationsView.swift; sourceTree = "<group>"; };
+		BB0011223344556677880002 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -52,8 +58,17 @@
 				77061D04DFB496C110B0ADFB /* DeviceList */,
 				FDBB05B1AC192C871C858B85 /* LocationControl */,
 				CBF0AD85969323EAF6DDFD0E /* Map */,
+				AA1122334455667788990005 /* SavedLocations */,
 			);
 			path = Features;
+			sourceTree = "<group>";
+		};
+		AA1122334455667788990005 /* SavedLocations */ = {
+			isa = PBXGroup;
+			children = (
+				AA1122334455667788990004 /* SavedLocationsView.swift */,
+			);
+			path = SavedLocations;
 			sourceTree = "<group>";
 		};
 		5BD5A763D1F1A41E8E819661 /* GPSChanger */ = {
@@ -62,6 +77,7 @@
 				0D7C3E86CDAFC4C92FF62F26 /* ContentView.swift */,
 				F9EAB87B7069A8363C411A7A /* GPSChanger.entitlements */,
 				AB6C6B2D9D17D59D4003451B /* Info.plist */,
+				BB0011223344556677880002 /* Assets.xcassets */,
 				66EAE4EE1F41F85B4BCED806 /* App */,
 				469CB172BD4B451E2A5451CE /* Features */,
 				A458664F8A16D98597FC17B7 /* Models */,
@@ -110,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				37CF03BED462FF08DEEA970D /* Device.swift */,
+				AA1122334455667788990002 /* SavedLocation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -137,6 +154,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA511A5798525606DD1B62FD /* Build configuration list for PBXNativeTarget "GPSChanger" */;
 			buildPhases = (
+				BB0011223344556677880003 /* Resources */,
 				D4D370A27C160E80E204C220 /* Sources */,
 			);
 			buildRules = (
@@ -184,6 +202,17 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		BB0011223344556677880003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB0011223344556677880001 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D4D370A27C160E80E204C220 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -198,6 +227,8 @@
 				E481A7CCDD751E2B4691F21C /* LocationService.swift in Sources */,
 				1CD5D283585E8BBA00D24EF5 /* MapContentView.swift in Sources */,
 				A51527BBAFFBB8CE0672017B /* SearchService.swift in Sources */,
+				AA1122334455667788990001 /* SavedLocation.swift in Sources */,
+				AA1122334455667788990003 /* SavedLocationsView.swift in Sources */,
 				FF66F08EF28AC92FA74EE934 /* ShellRunner.swift in Sources */,
 				00CD741536E76D4BB8E9AEAA /* TunnelService.swift in Sources */,
 			);
